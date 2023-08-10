@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    /* Definições da imagem de madeiras ao fundo do site */
     background-image: url(../imagens/fundo-madeira.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -30,6 +31,7 @@ section#telefone {
     background-image: url(../imagens/frame-iphone.png);
     background-repeat: no-repeat;
 
+    /* Posicionamento responsivo do frame iphone no centro da tela */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,16 +42,47 @@ section#telefone {
 }
 
 section#socials {
-    background-color: green;
-
-    padding: 50px;
-    
+    /* Posicionando os botões na direita do site */
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
+section#socials img {
+    /* Tamanho dos ícones sociais */
+    height: 50px;
+    width: 50px;
+
+    /* Impede que outros conteúdos criados pelo botão sejam expostos para fora (serão expostos dentro do tamanho do botão), quebrando o tamanho total do botão */
+    box-sizing: border-box;
+
+    /* Espaçamento entre botões e sombreamento */
+    margin: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+
+    /* Botões quadrados agora são redondos */
+    border-radius: 999px;
+
+    /* Duração da transição do hover */
+    transition-duration: .33s;
+}
+
+section#socials img:hover {
+    /* Borda branca para efeito de selecionamento interno, com a ajuda do border-box para manter o "aumento" da borda que iria crescer pra dentro, crescer pra fora */
+    border: 2px solid rgba(255, 255, 255, .5);
+
+    /* Levantamento do botão para um efeito de selecionado */
+    transform: translate(-5px, -5px);
+
+    /* Refazendo a sombra do botão quando selecionado */
+    box-shadow: 4px 4px 7.5px rgba(0, 0, 0, .5);
+
+    /* Duração da transição do hover e do bordado branco do selecionamento interno */
+    transition: .33s, border .5s;
+}
+
 iframe#tela {
+    /* Posicionando o visor no centro do iphone */
     position: relative;
     top: 81px;
     left: 23px;
