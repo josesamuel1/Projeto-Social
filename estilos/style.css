@@ -8,6 +8,7 @@
 }
 
 html, body {
+    /* Estilização do fundo da tela, antes da imagem de fundo */
     background-color: black;
     height: 100vh;
     width: 100vw;
@@ -22,6 +23,7 @@ body {
 }
 
 main {
+    /* Posicionamento e alinhamento de todo o conteúdo da página */
     position: relative;
 
     height: 100vh;
@@ -30,6 +32,7 @@ main {
 section#telefone {
     background-image: url(../imagens/frame-iphone.png);
     background-repeat: no-repeat;
+    background-size: cover;
 
     /* Posicionamento responsivo do frame IPhone no centro da tela */
     position: absolute;
@@ -85,8 +88,8 @@ iframe#tela {
     /* Posicionando o visor no centro do IPhone */
     position: relative;
     top: 81px;
-    left: 23px;
+    left: 21px;
 
-    width: 267px;
+    width: 270px;
     height: 471px;
 }

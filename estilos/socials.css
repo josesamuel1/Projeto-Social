@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* webkit que esconde a barra de rolagem das telas */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img {
+    width: 100vw;
+}
+
+/* Estilizando o botão do final da página */
+a {
+    display: block;
+    color: white;
+    background-color: darkred;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 20px;
+}
