@@ -45,7 +45,10 @@ section#telefone {
 }
 
 section#socials {
-    /* Posicionando os botões na direita do site */
+    /*
+    Posicionando os botões na direita do site
+    Os botões ficando um embaixo do outro são consequência da tag 'br' colocada no arquivo HTML.
+    */
     position: absolute;
     top: 0px;
     right: 0px;
@@ -53,8 +56,8 @@ section#socials {
 
 section#socials img {
     /* Tamanho dos ícones sociais */
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 
     /* Impede que outros conteúdos criados pelo botão sejam expostos para fora (serão expostos dentro do tamanho do botão), quebrando o tamanho total do botão */
     box-sizing: border-box;
@@ -63,7 +66,10 @@ section#socials img {
     margin: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
 
-    /* Botões quadrados agora são redondos */
+    /*
+    Botões quadrados agora são redondos
+    50% seria outro valor correto para esta ocasião.
+    */
     border-radius: 999px;
 
     /* Duração da transição do hover */
